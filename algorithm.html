@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Алгоритмическая задача</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Noto_Emoji_KitKat_1f3b7.svg/1200px-Noto_Emoji_KitKat_1f3b7.svg.png" />
+</head>
+<body>
+    <header id = "#header" class="header">
+        <div class="overlay">
+          <h1 class="header-title">JAZZ WITH US</h1>
+        </div>
+      </header>
+      <header class = "second-header"> 
+          <div class = "second-overlay">
+              <h1 class = "second-header-title"> ИННОВАЦИОННАЯ ШКОЛА ДЖАЗА </h1>
+          </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"class="button">Главная</a></li>
+            <li><a href="page1.html"class="button">Учебный план</a></li>
+            <li><a href="page2.html"class="button">Прослушивание</a></li>
+            <li><a href="example.html"class="button">Паспорт</a></li>
+            <li><a href="algorithm.html" class="activebutton">Алгоритмическая задача</a></li>
+        </ul>
+    </nav>
+    <div class="custom-line"></div>
+    <div class="centered-text">
+    <div class="bigbutton"><h2>Алгоритмическая задача</h2></div>
+    <h3>Проверка принадлежности числа промежутку</h3>
+
+    <form id="checkForm">
+        <div class="card"><label for="x">Введите число X:</label>
+        <input type="number" id="x" required>
+        <br><br>
+
+        <label for="a">Введите начало промежутка (a):</label>
+        <input type="number" id="a" required>
+        <br><br>
+
+        <label for="b">Введите конец промежутка (b):</label>
+        <input type="number" id="b" required>
+        <br><br>
+    </div>
+    <center><button type="submit" class="button">Проверить</button></center>
+    </form>
+    <form action="https://www.google.com/search?">
+    <p><center><button type="submit" class="button">Отправить</button></center></p>
+    </form>
+    <p><div class="result" id="result"></div></p>
+
+    <script>
+        document.getElementById('checkForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+            // Получаем значения из формы
+            const x = parseFloat(document.getElementById('x').value);
+            const a = parseFloat(document.getElementById('a').value);
+            const b = parseFloat(document.getElementById('b').value);
+
+            // Проверяем принадлежность
+            const resultDiv = document.getElementById('result');
+            if (x >= a && x <= b) {
+                resultDiv.textContent = 'Да, число ' + x + ' принадлежит промежутку [' + a + ', ' + b + '].';
+            } else {
+                resultDiv.textContent = 'Нет, число ' + x + ' не принадлежит промежутку [' + a + ', ' + b + '].';
+
+
+
+            }
+        });
+    </script>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+    <p><button id="scrollToTopBtn" onclick="scrollToTop()" class ="button">↑ Наверх</button></p>
+
+    <script>
+        // Получаем кнопку
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        // Показываем кнопку при прокрутке вниз на 200 пикселей
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        // Функция для прокрутки к началу страницы
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Плавная прокрутка
+            });
+        }
+    </script>
+    
+    <p>   </p>
+
+
+
+
+
+
+
+<footer class="footer">
+    <h5><p id = "cooperation" class="footer-author">
+        2024 Jazz with us
+    <p class = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/@sonchasas" target = "_blank">@sonchasas </a></h5>
+</footer>
+</body>
+</html>

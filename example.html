@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Паспорт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Noto_Emoji_KitKat_1f3b7.svg/1200px-Noto_Emoji_KitKat_1f3b7.svg.png" />
+    <link rel = "stylesheet" href = "passport.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" cressorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&diplay=swap" rel="stylesheet">
+
+</head>
+
+  <body>
+    <header id = "#header" class="header">
+        <div class="overlay">
+          <h1 class="header-title">JAZZ WITH US</h1>
+        </div>
+      </header>
+      <header class = "second-header"> 
+          <div class = "second-overlay">
+              <h1 class = "second-header-title"> ИННОВАЦИОННАЯ ШКОЛА ДЖАЗА </h1>
+          </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"class="button">Главная</a></li>
+            <li><a href="page1.html"class="button">Учебный план</a></li>
+            <li><a href="page2.html"class="button">Прослушивание</a></li>
+            <li><a href="example.html" class="activebutton">Паспорт</a></li>
+            <li><a href="algorithm.html"class="button">Алгоритмическая задача</a></li>
+        </ul>
+    </nav>
+    <div class="custom-line"></div>
+ <header class = "page-navigation">
+      <nav>
+        <ul>
+         <li> <a href = '#passport' class="button"> Паспорт</a></li>
+         <li> <a href = '#console' class="button"> DOM_JS</a></li>
+        </ul>
+
+      </nav>
+    </header>
+        <center><h1 id = "passport" >Паспорт</h1></center>
+        <div id = "main_fon"> 
+            <h5 id = "pass_title" class = "poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+            <div id = "page_top">
+                <p class = "vidanstr1"> ГУ МВД РОССИИ </p>
+                <p class = "vidanstr2">ПО МОСКОВСКОЙ ОБЛАСТИ</p>
+                <div class = "vidanstrdata">10.04.2019</div>
+                <p>   </p>
+                <div class="empty-line"></div>
+                <p>   </p>
+                <p class = "vidanstrcode">500-004</p>
+                <img class = "podpis" src = "https://luakhdaria.github.io/finalprojectdurakonline/podpis1.png">
+                <img class = "podpis1" src = "https://luakhdaria.github.io/finalprojectdurakonline/podpis.png">
+            </div>
+
+            <div id = "page_bottom">
+                <img class = "passfoto" src ="c:\Users\o_sak\Downloads\W-3.jpg">
+                <p> </p>
+                <p> </p>
+                <p class = "hfamilia">СОЛОВОВА</p>
+                <p class = "hname"> СОФЬЯ </p>
+                <p class = "hfname">СЕРГЕЕВНА</p>
+                <p class = "hpol">ЖЕН.</p>
+                <p class = "hpborn1">21.03.2005</p>
+                <p class = "hpborn2">ГОР. МОСКВА</p>
+            </div> 
+        </div>
+<p>   </p>
+           <center><p><button onclick = "convertToLatin()" class ="button"> English </button></p></center>
+
+
+<center><h3 id = "console" class = "course-title"> DOM_JS. Считываем информацию из DOM </h3></center>
+        <center><img src = "c:\Users\o_sak\Downloads\passportdom.jpg" height = "500px" ></center>
+        <script src = "passport.js">
+document.addEventListener('DOMContentLoaded', function() {
+    
+});
+</script>
+
+<p><button id="scrollToTopBtn" onclick="scrollToTop()" class ="button">↑ Наверх</button></p>
+
+<script>
+    // Получаем кнопку
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Показываем кнопку при прокрутке вниз на 200 пикселей
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Функция для прокрутки к началу страницы
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Плавная прокрутка
+        });
+    }
+</script>
+
+<p>   </p>
+<footer class="footer">
+    <h5><p id = "cooperation" class="footer-author">
+        2024 Jazz with us
+    <p class = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/@sonchasas" target = "_blank">@sonchasas </a></h5>
+</footer>
+    </body>
+</html>

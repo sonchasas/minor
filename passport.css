@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#main_fon{
+    height: 734px;
+    background-image: url(mypassport.ru/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center
+}
+#pass_title{
+    padding-top: 41px;
+    padding-left: 560px;
+}
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: italic;
+  font-style: normal;
+  letter-spacing:  0.8em;
+  word-spacing: 0.25em;
+}
+@font-face {
+    font-family: 'Kreadon';
+    src: local('Kreadon.ttf'),
+          url (/Kreadon.ttf.ttf);
+}
+.vidanstr1{
+    font-family: 'Kreadon';
+    padding-top: 10px;
+    padding-left: 630px;
+}
+.vidanstr2{
+    font-family: 'Kreadon';
+    display: inline-block; /* Необходимо для применения transform */
+    transform: translateY(-13px); /* Поднимаем текст вверх */
+    padding-left: 610px;
+    word-spacing: 0.65em;
+}
+.vidanstrdata{
+    font-family: 'Kreadon';
+    display: inline-block; /* Необходимо для применения transform */
+    transform: translateY(0px); /* Поднимаем текст вверх */
+    padding-left: 620px;
+    word-spacing: 0.65em;
+}
+.vidanstrcode{
+    font-family: 'Kreadon';
+    padding-left: 850px;
+    word-spacing: 0.65em;
+    padding-bottom: 0;
+}
+
+.empty-line {
+    margin-top: 33px; /* Отступ сверху */
+}
+
+
+.podpis{
+    margin-top: -40px;
+    padding-left: 560px;
+    float: left;
+}
+.podpis1{
+    margin-top: -20px;
+    padding-left: 115px;
+}
+.passfoto{
+    padding-top: 110px;
+    padding-left: 515px;
+    float:left;
+}
+.hfamilia{
+    padding-top: 78px;
+    padding-left: 770px ;
+}
+.hname{
+    padding-top: 15px;
+    padding-left: 790px;
+}
+.hfname{
+    margin-top: -14px;
+    padding-left: 770px;
+}
+.hpol{
+    margin-top: -10px;
+    padding-left: 40px;
+    float: left
+}
+
+.hpborn1{
+    margin-top: -10px;
+    padding-left: 50px;
+    float: left
+}
+.hpborn2{
+    padding-top: 10px;
+    padding-right: 630px;
+    float: right
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Учебный план</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Noto_Emoji_KitKat_1f3b7.svg/1200px-Noto_Emoji_KitKat_1f3b7.svg.png" /> 
+    <style>
+    .body {
+        font-family: "Unbounded", sans-serif;
+            display: flex;
+            justify-content: center; /* Центрирование по горизонтали */
+            align-items: center; /* Центрирование по вертикали */
+            height: 100vh; /* Высота экрана */
+            margin: 0; /* Убираем отступы */
+            background-color: #f0f0f0; /* Цвет фона страницы */
+        }
+
+        .price-table {
+            font-family: "Unbounded", sans-serif;
+            margin:auto;
+            width: 100%; /* Ширина таблицы */
+            max-width: 600px; /* Максимальная ширина таблицы */
+            border-collapse: collapse; /* Убираем двойные границы */
+            border-radius: 10px; /* Закругленные углы */
+            overflow: hidden; /* Скрываем переполнение */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+            background-image: url('https://static.tildacdn.com/tild3935-6631-4134-b064-346163303038/image.png'); /* Фоновое изображение */
+            background-size: cover; /* Масштабируем фоновое изображение */
+            background-position: center; /* Центрируем фоновое изображение */
+        }
+
+        .th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Граница между строками с прозрачностью */
+            color: white; /* Цвет текста ячеек */
+        }
+
+        .th {
+            background-color: rgba(76, 175, 80, 0.7); /* Полупрозрачный цвет фона заголовков */
+            color: white;
+        }
+
+        .tr:hover {
+            background-color: rgba(200, 200, 200, 0.3); /* Эффект при наведении на строку */
+        }
+
+        .image-cell {
+            text-align: center; /* Центрируем изображение в ячейке */
+        }
+
+        .image-cell img {
+            max-width: 100px; /* Максимальная ширина изображения в ячейке */
+            border-radius: 5px; /* Закругленные углы для изображения */
+        }
+
+        .a {
+            color: #4CAF50; /* Цвет гиперссылок */
+            text-decoration: none; /* Убираем подчеркивание у гиперссылок */
+        }
+
+        .a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении на гиперссылку */
+        }
+</style>
+</head>
+
+
+<body>
+    <header id = "#header" class="header">
+        <div class="overlay">
+          <h1 class="header-title">JAZZ WITH US</h1>
+        </div>
+      </header>
+      <header class = "second-header"> 
+          <div class = "second-overlay">
+              <h1 class = "second-header-title"> ИННОВАЦИОННАЯ ШКОЛА ДЖАЗА </h1>
+          </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"class="button">Главная</a></li>
+            <li><a href="page1.html" class="activebutton">Учебный план</a></li>
+            <li><a href="page2.html"class="button">Прослушивание</a></li>
+            <li><a href="example.html"class="button">Паспорт</a></li>
+            <li><a href="algorithm.html"class="button">Алгоритмическая задача</a></li>
+        </ul>
+    </nav>
+    <div class="custom-line"></div>
+    <div class="centered-text">
+    <h2><div class=bigbutton>Учебный план</div></h2>
+</div>
+   <p></p>
+    <div class=cool2><ol>
+        <center><h3>Трехгодичный курс:</h3></center>
+        <li>Основы джазового сольфеджио</li>
+        <li>Факультативы
+            <ul>
+                <li>Ритмическая теория</li>
+                <li>Импровизация</li>
+                <li>История музыки</li>
+            </ul>
+        </li>
+        <li>Вступление в ансамбль и выступления</li>
+    </ol>
+</div>
+<div class="custom-line"></div>
+<center><h1>Цена</h1></center>
+    <table class="price-table">
+        <thead>
+            <tr>
+                    <td class="image-cell"><img src="https://avatars.dzeninfra.ru/get-zen_doc/3144955/pub_637f3c316a60b41425dfbd88_637f51574724b63390493b17/scale_1200" alt="Изображение"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1 месяц (12 занятий)</td>
+                <td>12000</td>
+            <tr>
+                <td>Курс (48 занятий)</td>
+                <td><a href="https://www.google.com" target="_blank">44000 с учетом скидки</a></td>
+            </tr>
+            <tr>
+                <td>Участие в ансамбле</td>
+                <td><a href="https://www.openai.com" target="_blank">6600</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <p><button id="scrollToTopBtn" onclick="scrollToTop()" class ="button">↑ Наверх</button></p>
+
+    <script>
+        // Получаем кнопку
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        // Показываем кнопку при прокрутке вниз на 200 пикселей
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        // Функция для прокрутки к началу страницы
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Плавная прокрутка
+            });
+        }
+    </script>
+    
+    <p>   </p>
+
+
+
+   
+    <footer class="footer">
+        <h5><p id = "cooperation" class="footer-author">
+            2024 Jazz with us
+        <p class = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/@sonchasas" target = "_blank">@sonchasas </a></h5>
+    </footer>
+</body>
+</html>

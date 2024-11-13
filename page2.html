@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 2</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.body {
+    font-family: "Unbounded", sans-serif;
+}
+</style>
+</head>
+<body>
+    <header id = "#header" class="header">
+        <div class="overlay">
+          <h1 class="header-title">JAZZ WITH US</h1>
+        </div>
+      </header>
+      <header class = "second-header"> 
+          <div class = "second-overlay">
+              <h1 class = "second-header-title"> ИННОВАЦИОННАЯ ШКОЛА ДЖАЗА </h1>
+          </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"class="button">Главная</a></li>
+            <li><a href="page1.html"class="button">Учебный план</a></li>
+            <li><a href="page2.html" class="activebutton">Прослушивание</a></li>
+            <li><a href="example.html"class="button">Паспорт</a></li>
+            <li><a href="algorithm.html"class="button">Алгоритмическая задача</a></li>
+        </ul>
+    </nav>
+    <div class="custom-line"></div>
+
+
+    <div class="cool">
+        <p><h2>Остались вопросы? </h2></p>
+        <p><h2> Закажите звонок!</h2></p></div>
+       
+
+    <h3><center>Форма контактов</center></h3>
+    <center><form action="https://www.google.com/search?">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="text" name="surname" placeholder="Фамилия" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="Электронная почта" required>
+        <input type="groupe" name="groupe" placeholder="Группа" required>
+        <input type="date" name="date"></center>
+        <p><center><button type="submit" class="button">Отправить</button></center></p>
+    </form>
+    
+
+   <div class="cool2">
+        <p><h2>Интересует прослушивание? </h2></p>
+        <p><h2>Мы ждем Вашу анкету!</h2></p></div>
+        <div class="centered-text">
+            <form class = "form" action = 'https://www.google.com/search?' method = "get" target = "_blank">
+             <p><h4>Укажите Ваш пол:</h4>
+            <input type="Radio" name="gender" value="female"> Женский
+            <input type="Radio" name="gender" value="male" checked > Мужской
+            </p>
+            <p> <h4>Музыкальное образование:</h4>
+            <input type="Checkbox" name="experience"  value="10" checked> Нет
+            <input type="Checkbox"  name="experience"   value="20" checked> Музыкальня школа
+            <input type="Checkbox" name="experience" value="30" checked> Высшее учебное заведение
+        </p>
+        <p><h4> Опишите Ваш музыкальный опыт:</h4>
+            <br>
+            <TEXTAREA cols=80 rows=4 name="textarea" > ... </TEXTAREA>
+        </p>
+    
+        <p><h4>Дата рождения :</h4> <input type="date" name="user_date"  value='birth_data'></p>
+        <p> <h4>Пароль:</h4> <input type="password" name="password" size=9  value="123"></p>
+        <p> <h4>Прикрепите Ваше портфолио</h4>: <input type="tехт" name="000_file_name" value="Н_ОW_Г_326510_1_Ivanov.txt" size='30'></p>
+        <p>
+            <input type="Reset"  name="Reset"  value="Обновить">
+            <input type="Submit" name="submit"  value="Отправить">
+        </p>
+    
+        </form>
+    </div>
+
+    <p><button id="scrollToTopBtn" onclick="scrollToTop()" class ="button">↑ Наверх</button></p>
+
+    <script>
+        // Получаем кнопку
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        // Показываем кнопку при прокрутке вниз на 200 пикселей
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        // Функция для прокрутки к началу страницы
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Плавная прокрутка
+            });
+        }
+    </script>
+    
+    <p>   </p>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <h5><p id = "cooperation" class="footer-author">
+            2024 Jazz with us
+        <p class = "footer-cooperation">По вопросам сотрудничества: <a href = "https://t.me/@sonchasas" target = "_blank">@sonchasas </a></h5>
+    </footer>
+</body>
+</html>
