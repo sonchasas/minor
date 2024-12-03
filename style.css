@@ -14,7 +14,8 @@ nav ul li {
   */
 }
 @media (max-width:320px) {
-    
+
+}
 /* Стили для навигационного меню */
 nav {
     display: flex; /* Используем flexbox для выравнивания */
