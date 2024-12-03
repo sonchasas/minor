@@ -1,0 +1,328 @@
+/* Подключаем шрифты из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Unbounded:wght@200..900&display=swap');
+
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Стили для навигационного меню */
+nav {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем flexbox для выравнивания элементов списка */
+}
+
+nav li {
+    margin: 0 15px; /* Отступы между элементами списка */
+}
+
+.custom-line {
+    border-top: 10px dashed #4a0000; /* Пунктирная линия */
+    margin: 35px 0; 
+}
+
+/* Общие стили для body */
+body {
+    font-family:  font-family: 'Lora', serif;;
+    background-color: #e1999a;
+    color: #4a0000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Заголовки */
+h1,  h3, h4 {
+    font-family: "Unbounded", sans-serif;
+    color: #4a0000;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Стили для параграфов */
+p {
+    margin-bottom: 15px;
+}
+
+/* Кнопки */
+.button {
+  font-family: "Unbounded", sans-serif;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #b94d4d; /* Цвет фона */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Скругление углов */
+  transition: background-color 0.3s; /* Плавный переход */
+  transition: transform 0.3s;
+  margin: 0 auto; /* Автоматические отступы по бокам */
+  
+    }
+    
+    .button:hover {
+        background-color: #9d4141; /* Цвет при наведении */
+        transform: scale(1.05);
+
+    }
+    
+
+    .cool {
+        color: white;
+        font-family: "Unbounded", sans-serif;
+        display: flex; /* Используем Flexbox */
+        justify-content: center;
+        width: 50;
+        background: #4a0000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .cool2 {
+        color: #4a0000;
+        font-family: "Unbounded", sans-serif;
+        display: flex; /* Используем Flexbox */
+        justify-content: center;
+        width: 40;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: auto
+    }
+
+
+/* Карточки */
+.card {
+    font-family: "Unbounded", sans-serif;
+    display: inline-block;
+    width: fit-content;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Центрирование текста */
+}
+
+/* Стили для ссылок */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.activebutton {
+    font-family: "Unbounded", sans-serif;
+    background-color: #4a0000; /* Цвет фона для активной ссылки */
+    display: inline-block;
+  padding: 10px 20px;
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Скругление углов */
+  transition: background-color 0.3s; /* Плавный переход */
+  transition: transform 0.3s;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .activebutton:hover {
+        background-color: #4a0000; /* Цвет при наведении */
+        transform: scale(1.05);
+    }
+
+.centered-text {
+        text-align: center; /* Центрирование текста */
+        
+    }
+    button {
+        font-family: "Unbounded", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b94d4d; /* Цвет фона */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Скругление углов */
+  transition: background-color 0.3s; /* Плавный переход */
+  transition: transform 0.3s;
+  margin: 0 auto; /* Автоматические отступы по бокам */
+  
+    }
+    .button:hover {
+        background-color: #4a0000; /* Цвет при наведении */
+        transform: scale(1.05);
+    }
+    .header {
+        width: 100%; /* Занимает всю ширину родителя */
+    height: 55vh; /* Высота блока */
+    text-align: center;
+    background-color: #eee;
+    background-image: url(https://cdn.culture.ru/images/0a58e6b7-01d3-5a56-9b23-b75b2441dd32);
+    background-size: cover; /* Чтобы изображение полностью заполнило блок */
+    background-position: center;
+      }
+      
+      .second-header {
+          height: 100px;
+          text-align: center;
+          background-color: #e1999a;
+          background-position: center;
+
+          
+      
+      }
+
+      .bigbutton {
+        font-family: "Unbounded", sans-serif;
+        border-radius: 60px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        padding: 50px 100px;
+        text-align: center;
+        background-color: #4a0000; /* Цвет фона */
+        color: white; /* Цвет текста */
+        text-decoration: none; /* Убираем подчеркивание */
+        border-radius: 10px; /* Скругление углов */
+        margin: auto; /* Автоматические отступы по бокам */
+        
+          }
+      
+      .header-title {
+        margin: auto;
+        color: white;
+        font-weight: 800;
+        font-size: 100px;
+        text-transform: center;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+      }
+      .second-header-title {
+        margin: auto;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 40px;
+        text-transform: center;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: -30;
+        font-family: "Unbounded", sans-serif;
+  background-color: #4a0000; /* Цвет фона */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Скругление углов */
+  margin: 0 auto; /* Автоматические отступы по бокам */
+      }
+
+.formpage1 {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+        
+.footer {
+    background-color: #4a0000;
+    color: #fff;
+    padding: 20px 0;
+    font-family: "Unbounded", sans-serif;
+    text-align: center; /* Центрирование текста */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4a0000;
+}
+  
+  .result {
+    font-family: "Unbounded", sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a0000; /* Цвет фона */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s; /* Плавный переход */
+    transition: transform 0.3s;
+    margin: 0 auto; /* Автоматические отступы по бокам */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  
