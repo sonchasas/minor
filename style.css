@@ -12,9 +12,7 @@
         padding: 10px;
     }
     
-    .navigation {
-        display: none; /* Скрыть навигацию на мобильных */
-    }
+    
 }
 
 /* Стили для планшетов и десктопов */
@@ -38,7 +36,7 @@
 }
 
 @media (min-width: 768px) {
-    .item {
+    .button, .button:hover, .activebutton, .header-title {
         flex: 1 1 48%; /* На больших экранах элементы занимают по 48% ширины */
     }
 }
