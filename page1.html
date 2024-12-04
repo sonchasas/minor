@@ -119,36 +119,8 @@
 </div>
 <div class="custom-line"></div>
 
-<script>
-    // Данные для повторяющихся блоков
-    const data = [
-        { title: "Фортепиано", description: "Клавишные" },
-        { title: "Гитара", description: "Струнные" },
-        { title: "Бас-гитара", description: "Струнные" },
-        { title: "Саксофон", description: "Духовые" },
-        { title: "Флейта", description: "Духовые" },
-        { title: "Вокал", description: "Вокальные" },
-    ];
-
-    // Функция для создания блоков
-    function createContentBlocks(data) {
-        const container = document.getElementById('contentContainer');
-
-        data.forEach(item => {
-            const block = document.createElement('div');
-            block.className = 'content-block';
-            block.innerHTML = 
-                <h2>${item.title}</h2>
-                <p>${item.description}</p>
-            ;
-            container.appendChild(block);
-        });
-    }
-
-    // Вызов функции для создания блоков
-    createContentBlocks(data);
-</script>
-
+<script src="script.js"></script>
+    
 <center><h1>Цена</h1></center>
     <table class="price-table">
         <thead>
