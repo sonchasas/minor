@@ -129,13 +129,13 @@ p {
   transition: background-color 0.3s; /* Плавный переход */
   transition: transform 0.3s;
   margin: 0 auto; /* Автоматические отступы по бокам */
-  
+  flex-wrap: wrap;
     }
     
     .button:hover {
         background-color: #9d4141; /* Цвет при наведении */
         transform: scale(1.05);
-
+        flex-wrap: wrap;
     }
     
 
@@ -210,11 +210,13 @@ a:hover {
   transition: transform 0.3s;
   border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
     }
     
     .activebutton:hover {
         background-color: #4a0000; /* Цвет при наведении */
         transform: scale(1.05);
+        flex-wrap: wrap;
     }
 
 .centered-text {
