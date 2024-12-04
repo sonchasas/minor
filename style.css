@@ -2,6 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Unbounded:wght@200..900&display=swap');
 
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .navigation {
+        display: none; /* Скрыть навигацию на мобильных */
+    }
+}
+
+/* Стили для планшетов и десктопов */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .navigation {
+        display: block; /* Показать навигацию на больших экранах */
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 100%; /* На мобильных устройствах каждый элемент занимает 100% ширины */
+}
+
+@media (min-width: 768px) {
+    .item {
+        flex: 1 1 48%; /* На больших экранах элементы занимают по 48% ширины */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 nav ul li {
     display: inline;
